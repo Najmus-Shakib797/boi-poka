@@ -16,6 +16,7 @@ const Book = ({ singleBook }) => {
     yearOfPublishing,
     publisher,
     bookId,
+    totalPages,
   } = singleBook;
 
   return (
@@ -35,6 +36,7 @@ const Book = ({ singleBook }) => {
             <div className="badge badge-secondary">{yearOfPublishing}</div>
           </h2>
           <p>Book by : {publisher}</p>
+          <h3>Pages : {totalPages}</h3>
           <div className="border-1 border-dashed"></div>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">{category}</div>
